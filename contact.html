@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinglebread Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="images/jpg" href="images/icons8-bread-loaf-48.png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="logo">Jinglebread</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contact Us!</h1> <br>
+            <p>
+                Required information marked with *
+            </p>
+            <div class="contact">
+            <form action="https://studentweb.cs.wwu.edu/~sparlij/CS102/CS102FinalProj/index.html" method="POST" onsubmit="return validate();">
+                <label for="myName">*Name: </label>
+                <input type="text" name="myName" id="myName" title="Please enter your name!" placeholder="e.g. Jack Sparling">
+                <label for="myEmail">*Email: </label>
+                <input type="email" name="myEmail" id="myEmail" title="Please enter your email!" placeholder="e.g. jack@sparling.com">
+                <label for="myCity">Select your City: </label>
+                <select name="myCity" id="myCity">
+                    <option value="v1">Select Your City</option>
+                    <option value="v2">Bellingham</option>
+                    <option value="v3">Seattle</option>
+                    <option value="v4">Tacoma</option>
+                    <option value="v5">Olympia</option>
+                </select>
+                <br><br>
+                <label for="myComment">*Comments: </label>
+                <textarea name="myComment" id="myComment" cols="20" rows="2" placeholder="Enter your comments here.."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+            <div class="contact-social">
+                <a href="https://www.instagram.com/"><img src="images/instagram-1675670_1280.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/"><img src="images/facebook-2429746_1280.png" alt="Facebook"></a> 
+                <a href="https://twitter.com/"><img src="images/twitter-2430933_1280.png" alt="Twitter"></a> 
+                <a href="contact.html"><img src="images/envelope-4313721_1280.png" alt="Contact Us!"></a>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; Jinglebread 2021
+        </footer>
+    </div>
+    
+</body>
+</html>
