@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
 }
@@ -15,17 +15,17 @@
 
 .logo{
     font-size: 80px;
-    padding-left: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 20px;
     font-weight: bold;
 }
 
 header{
+    width: 80%;
     background-color: #954535;
     border: 5px solid lightcoral;
-    position: static;
+    position: fixed;
 }
-
-
 
 nav ul{
     list-style-type: none;
@@ -86,67 +86,97 @@ main a{
 .left-side{
     float: left;
     width: 50%;
-    height: 450px;
-    padding: 70px;
+    height: 800px;
+    padding-top: 300px;
     background-color: #ffe4c4;
     text-align: center;
 }
 
 .left-side a img{
-    width: 23%;
-    height: 30%;
+    width: 15%;
+    height: 15%;
     padding: 10px;
 }
 
 
 .left-side h2{
     text-decoration: underline;
-    padding-top: 40px;
 }
 
 .left-side p{
     font-size: 20px;
+    color: #954535;
+}
+
+.left-side3{
+    float: left;
+    width: 50%;
+    height: 800px;
+    background-color: #ffe4c4;
+    text-align: center;
+}
+
+.left-side3 h2{
+    padding-top: 80px;
+    text-decoration: underline;
+}
+
+.left-side3 p{
+    font-size: 20px;
+    margin: 10px;
+    color: #954535;
 }
 
 .right-side{
     float: right;
+    text-align: center;
     width: 50%;
-    height: 450px;
+    height: 800px;
     background-color: #ffe4c4;
+    padding: 50px;
 }
 
 .right-side img{
-    padding: 50px;
+    margin-top: 150px;
     width: 90%;
+    height: 80%;
+    border: 5px solid lightcoral;
 }
 
 
-.clarfix{
+.clearfix{
     clear: both;
 }
 
 .menu{
     background-color: #954535;
     border: 5px solid lightcoral;
+    height: 600px;
 }
 
 .menu h2{
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     text-decoration: underline;
 }
 
 
 .menu li{
+    color: #ffe4c4;
     list-style: none;
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
 }
 
-.right-side{
-    padding: 50px;
+.menu li a:link {
+    text-decoration: none;
+    color: #ffe4c4;
+}
+
+.menu li a:visited {
+    color: #ffe4c4;
 }
 
 .left-side img{
@@ -155,7 +185,6 @@ main a{
 }
 
 .left-side2{
-    padding-top: 50px;
     float: left;
     width: 100%;
     height: 450px;
@@ -181,14 +210,47 @@ main a{
 footer{
     text-align: center;
     font-style: italic;
-    background-color: #ffe4c4;
-    color: #000;
+    background-color: #954535;
+    color: #ffe4c4;
     border: 5px solid lightcoral;
+    border-top: 2px solid lightcoral;
 }
 
 /* SERVICES */
 
+.service {
+    float: left;
+    width: 50%;
+    height: 600px;
+}
+
+.service2 {
+    float: right;
+    width: 50%;
+    height: 600px;
+    text-align: center;
+}
+
+.service2 img {
+    margin-top: 200px;
+    width: 60%;
+    height: 60%;
+    border: 5px solid lightcoral;
+}
+
+.service h2 {
+    padding-top: 250px;
+    text-decoration: underline;
+}
+
+.service p {
+    padding-top: 50px;
+    margin-left: 20px;
+    color: #954535;
+}
+
 .services-social{
+    padding-top: 50px;
     width: 100%;
     text-align: center;
 }
@@ -200,27 +262,43 @@ footer{
 
 /* CONTACT PAGE */
 
+.c h1 {
+    padding-top: 200px;
+}
+
 .contact{
-    padding-top: 30px;
-    padding-left: 450px;
-    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact p {
+    color: #954535;
 }
 
 label{
-    float: left;
+    font-weight: bold;
     display: block;
-    text-align: left;
     width: 10em;
     font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
 }
 
 
-input, textarea{
-    display: block;
+input {
+    display: inline;
+    margin: 5px;
     margin-bottom: 1em;
 }
 
+textarea {
+    padding: 5px;
+}
+
 .contact-social{
+    padding-top: 100px;
     text-align: center;
     width: 100%;
 }
@@ -232,17 +310,31 @@ input, textarea{
 
 /* PRODUCT PAGE */
 
+.prod h2{
+    padding-top: 250px;
+}
+
+.prod p {
+    color: #954535;
+}
+
 table{
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     background-color: #ffe4c4;
+    color: #954535;
+    border: 2px solid #954535;
     text-align: center;
 }
 
 caption{
     text-decoration: underline;
+    padding-bottom: 10px;
 }
 
 .prod-social{
+    padding-top: 100px;
     text-align: center;
     width: 100%;
 }
@@ -254,17 +346,26 @@ caption{
 
 /* ABOUT PAGE */
 
+.about {
+    padding-top: 100px;
+}
+
+.about h1{
+    padding-top: 180px;
+}
+
 .about-left{
     float: left;
     text-align: center;
     width: 50%;
-    height: 450px;
+    height: 600px;
     background-color: #ffe4c4;
     padding: 10px;
 }
 
 .about-left img{
     width: 100%;
+    border: 5px solid lightcoral;
 }
 
 .about-left h2{
@@ -274,7 +375,7 @@ caption{
 .about-right{
     float: right;
     width: 50%;
-    height: 450px;
+    height: 600px;
     background-color: #ffe4c4;
 }
 
@@ -283,29 +384,206 @@ caption{
 }
 
 .about-right p{
+    margin: 20px;
     padding-top: 20px;
+    color: #954535;
 }
-
-.about-right ul li{
-    padding: 20px;
-    display: inline-block;
-}
-
 
 .about-right a img{
     width: 15%;
 }
 
-.hidden{
-    color: transparent;
-}
-
 .about-social{
     width: 100%;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 .about-social a img{
     padding: 10px;
+}
+
+#gallery {
+    background-color: #954535;
+    height: 500px;
+}
+
+/* Trying sliding gallery */
+.container {
+	width:50%;
+    padding-top: 40px;
+	padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto;
+	max-width:800px;
+    height:500px;
+}
+/* Basic appearance stuff ends here */
+
+/* Parallax Horizontal Scroller - by Bree Dulmage, 2020 */
+#proparallax {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	min-height: 25.5rem;
+	border: 5px solid lightcoral;
+}	
+
+#proparallax img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	object-fit: cover;
+}
+
+@keyframes parallax_one { /* controls img.one movement */
+	0% { /* .imageloaded */
+		height: 100%;
+		width: 100%;
+		left: 0rem;
+		opacity: 1;
+	}
+	/* .imagehold runs from 0 to 27.77% */
+	27.77% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	27.78% { /* .imagepreunload */
+		width: 100%;
+		left: 0rem;
+		right: 50rem;
+	}
+	33.33% { /* .imageunloaded */
+		height: 100%;
+		width: 100%;
+		left: 0rem;
+		right: 0rem;
+		opacity: 1;
+	}
+	33.34% { /* imageoff */
+		opacity: 0;	
+	}
+	94.43% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	94.44% { /* .imageinitial */
+		height: 100%;
+		width: 100%;
+		left: 50rem;
+		opacity: 1;
+	}
+	100% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+		opacity: 1;		
+	}
+}
+
+@keyframes parallax_two { /* controls img.two movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	27.77% { /* .imageon */
+		left: 0rem;
+		opacity: 0;
+	}
+	27.78% { /* .imageinitial */
+		width: 100%;
+		height: 100%;
+		left: 50rem;
+		opacity: 1;
+	}
+	33.33% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	/* .imagehold runs from 33.34% - 61.10% */
+	61.10%{ /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	61.11% { /* .imagepreunload */
+		width: 100%;
+		left: 0rem;
+		right: 50rem;
+	}
+	66.67% { /* .imageunloaded */
+		width: 100%;
+		right: 0rem;
+		left: 0rem;
+		height: 100%;
+		opacity: 1;
+	}
+	66.68% { /* .imageoff */
+		opacity: 0;
+	}
+	100% { /* .imageoff */
+		opacity: 0;
+	}
+}
+
+@keyframes parallax_three { /* controls img.three movement */
+	0% { /* .imageoff */
+		opacity: 0;
+	}
+	61.10%{ /* .imageon */
+		opacity: 0;
+	}
+	61.11% { /* .imageinitial */
+		width: 100%;
+		height: 100%;
+		left: 50rem;
+		opacity: 1;		
+	}
+	66.67% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	/* .imagehold runs from 66.67% - 94.43% */
+	94.43% { /* .imageloaded */
+		width: 100%;
+		left: 0rem;
+	}
+	94.44% { /* .imagepreunload */
+		width: 100%;
+		left: 0rem;
+		right: 50rem;
+	}
+	100% { /* imageunloaded */
+		width: 100%;
+		right: 0rem;
+		left: 0rem;
+		height: 100%;
+		opacity: 1;
+	}
+}
+
+#proparallax img.one{
+	animation-name: parallax_one; /* controls img.one movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.two {
+	animation-name: parallax_two; /* controls img.two movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
+}
+
+#proparallax img.three {
+	animation-name: parallax_three; /* controls img.three movement */
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-duration: 18s;
+	animation-direction: forwards;
+	object-fit: cover;
 }
