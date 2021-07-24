@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jinglebread Contact</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="images/jpg" href="images/icons8-bread-loaf-48.png">
+    <link rel="shortcut icon" type="images/jpg" href="images/bread-loaf.png">
     <script src="script.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <div class="logo">Jinglebread</div>
+            <div class="logo">Jinglebread
+                <img src="images/bread-loaf.png" alt="">
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -31,7 +33,7 @@
             <p>
                 Required information marked with *
             </p>
-            <form action="https://jack-sparling.github.io/jbread/index.html" method="POST" onsubmit="return validate();">
+            <form action="submit.html" method="POST" onsubmit="return validate();">
                 <label for="myName">*Name: </label>
                 <input type="text" name="myName" id="myName" title="Please enter your name!" placeholder="e.g. Jack Sparling">
                 <label for="myEmail">*Email: </label>
